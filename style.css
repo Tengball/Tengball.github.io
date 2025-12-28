@@ -335,6 +335,7 @@ section {
     color: var(--color-text-muted);
     margin-bottom: 2rem;
     margin-top: 4rem;
+    flex-wrap:wrap;
 }
 
 
