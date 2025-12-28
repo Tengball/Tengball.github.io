@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UX/UI Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 커스텀 커서 -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- 프리로더 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading</div>
+        </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="nav">
+        <div class="nav-logo">Portfolio</div>
+        <div class="nav-menu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- 스크롤 프로그레스 바 -->
+    <div class="scroll-progress"></div>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-line">Design to turn</span>
+                <span class="hero-line">Insights into Impact</span>
+            </h1>
+            <p class="hero-subtitle">Data-driven design · AI-enhanced workflows · User-centered solutions</p>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="image-wrapper">
+                        <img src="images/profile.jpg" alt="Profile" class="profile-image">
+                        
+                    </div>
+                    <p class="about-description-title">
+                        유연한 사고와 체계적 실행으로 <br> 결과를 완성하는 프로덕트 디자이너 <br> 고보경입니다.
+                    </p>
+                    <div class="about-description2">
+                        <div class="stat-item">
+                            <span class="stat-label2">#데이터_기반_사고</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label2">#AI_활용_능력</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label2">#퍼블리싱</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label2">#사교성</span>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                    <div class="about-image">
+                        <!-- 여기에 추가 -->
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Birth</span>
+                                <span class="info-value">2002.05.30</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Tel</span>
+                                <span class="info-value">010-2749-9566</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">E-mail</span>
+                                <span class="info-value">bok0530g@gmail.com</span>
+                            </div>
+                            <div class="info-item info-item-education">
+                                <span class="info-label">Education</span>
+                                <div class="info-education-list">
+                                    <div class="education-entry">
+                                        <span class="education-period">2018.03 ~ 2021.02</span>
+                                        <span class="education-school">명일여자고등학교</span>
+                                    </div>
+                                    <div class="education-entry">
+                                        <span class="education-period">2021.03 ~ 2026.02</span>
+                                        <span class="education-school">가천대학교 시각디자인학과</span>
+                                        <span class="education-note">(졸업 예정)</span>
+                                    </div>
+                                </div>
+                            </div>                            
+
+                            <div class="info-item">
+                                <span class="info-label">대학 학점</span>
+                                <span class="info-value">전체 평점 4.12 / 전공 평점 4.3 </p>
+                                <span class="info-value2">* 총점 4.5 기준</span>
+                            </div>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="12">0</span>
+                                <span class="stat-label">협업 프로젝트</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="4">0</span>
+                                <span class="stat-label">실무 경험</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">대외 활동</span>
+                            </div>
+                        </div>
+    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects 섹션 -->
+    <section id="projects" class="projects">
+        <div class="container-full">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Selected Projects</h2>
+            </div>
+            <div class="projects-list">
+                <!-- 프로젝트 1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <a href="sloweat.html" class="project-image-link">                            
+                        <div class="project-image-wrapper">
+                            <img src="images/슬로잇.jpg" alt="슬로잇" class="project-image-jpg">
+                            <div class="project-image-overlay">
+                                <span class="overlay-text">View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    <div class="project-info">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">슬로잇</h3>
+                        <p class="project-description">저속노화 식단 및 정보 제공 서비스</p>
+                        <div class="project-tags">
+                            <span class="tag">UX Research</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 프로젝트 2 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <a href="wheeler.html" class="project-image-link">                            
+                        <div class="project-image-wrapper">
+                            <img src="images/wheeler.jpg" alt="휠러" class="project-image-jpg">
+                            <div class="project-image-overlay">
+                                <span class="overlay-text">View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-info">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">휠러</h3>
+                        <p class="project-description">사이클링 헬스케어 게임 어플리케이션</p>
+                        <div class="project-tags">
+                            <span class="tag">Visual Design</span>
+                            <span class="tag">UX Research</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Motion Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 프로젝트 3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <a href="vinteum.html" class="project-image-link">                            
+                        <div class="project-image-wrapper">
+                            <img src="images/빈틈.jpg" alt="빈틈" class="project-image-jpg">
+                            <div class="project-image-overlay">
+                                <span class="overlay-text">View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-info">
+                        <div class="project-number">03</div>
+                        <h3 class="project-title">빈틈</h3>
+                        <p class="project-description">그룹 일정 매칭 서비스</p>
+                        <div class="project-tags">
+                            <span class="tag">Service Design</span>
+                            <span class="tag">UX/UI Design</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 프로젝트 4 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <a href="jubilee.html" class="project-image-link">                            
+                        <div class="project-image-wrapper">
+                            <img src="images/쥬빌레.jpg" alt="슬로잇" class="project-image-jpg">
+                            <div class="project-image-overlay">
+                                <span class="overlay-text">View Project</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-info">
+                        <div class="project-number">04</div>
+                        <h3 class="project-title">쥬빌레</h3>
+                        <p class="project-description">시각디자인학과 졸업 전시 웹사이트</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Interaction Design</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience 섹션 (새로 추가) -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- 경력 사항 -->
+                <div class="experience-column">
+                    <h3 class="experience-category">경력 사항</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025.01 - 2025.03</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">하슬라 아트월드</h4>
+                                <p class="timeline-role">'기억상자' UI/UX 디자인 외주 (프리랜서 계약)</p>
+                                <p class="timeline-text">    
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                    5명 팀(기획자, 본인, 개발자 3명)구성으로, 고인의 생전 일상을 기록하는 서비스 '기억상자'를 개발했습니다. 
+                                    중심 3탭 구조(홈 - 추억 - 공유) 정보구조도 제작, Figma 사용자 플로우 시각화, 주 2회 미팅으로 시나리오별 인터랙션 스펙 전달.
+                                </p>
+                                <button class="timeline-toggle">
+                                    <span class="toggle-icon">▼</span>
+                                    <span class="toggle-text">상세보기</span>
+                                </button>
+                                
+                                
+
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024.10 - 2025.04</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">코리너스 글로벌</h4>
+                                <p class="timeline-role">마케팅 · 웹 디자이너 (프리랜서 계약)</p>
+                                <p class="timeline-text">
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                        (1) 마케팅 디자인 : 사업 소개서 및 클라이언트 제안서 디자인 업무를 담당하여, 수치 중심 인포그래픽과 협업 플로우 시각화로 전문성을 강조했습니다. 디자인 템플릿 체계화를 맡았으며 제안서 제작 시간을 4시간→1.5시간 단축하였습니다. SNS 조회수·반응 증가 성과가 있었습니다. 외에도 SNS 콘텐츠, 상세페이지, 영상과 카탈로그 등 다수 그래픽 작업을 수행했습니다.
+                                    <br>(2) 기업 & 크리에이터 매칭 플랫폼 웹사이트 'Gift korea' UIUX 디자인 및 정보 구조도 설계
+                                </p>
+                                <button class="timeline-toggle">
+                                    <span class="toggle-icon">▼</span>
+                                    <span class="toggle-text">상세보기</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024.12 - 2025.02</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">파라이 F&B</h4>
+                                <p class="timeline-role">브랜드 디자인 외주 (프리랜서 계약)</p>
+                                <p class="timeline-text">
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                        F&B 브랜드 '파라이'의 브랜딩 및 그래픽 디자인을 제작했습니다. 브랜드 홍보 포스터, 매장용 메뉴판, 배포용/배달용 전단지, 리뷰 이벤트 프로모션, 가맹 사업 소개서, 통합 디자인 시스템을 구축했습니다.
+                                </p>
+                                <button class="timeline-toggle">
+                                    <span class="toggle-icon">▼</span>
+                                    <span class="toggle-text">상세보기</span>
+                                </button>
+
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024.07 - 2024.09</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">원창 머티리얼 서울 영업본부</h4>
+                                <p class="timeline-role">브랜드 · 웹 디자인 인턴 현장실습</p>
+                                <p class="timeline-text">
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                    (1) 코엑스 '프리뷰 인 서울 2024' 전시에서 브랜드 아이덴티티 기반 전시용 서브 브랜딩과 아이콘 64종, 전시 디자인을 했습니다. 6m×4m 벽면 출력물 사이즈·재질 확정부터 현장 조명 고려 레이아웃 조정 및 설치 감리를 진행했습니다.
+                                    <br>(2) 자사 웹사이트 리디자인에서 IA를 3단계→2단계로 단순화하고, Figma 프로토타입과 반응형 레이아웃, 디자인 시스템을 재구축했으며 After Effects로 스플래시 모션을 제작했습니다.
+                                    <br>(3) 외에 사업 소개서, 디자인 시스템 재구축, 그래픽 디자인 작업 등 다수 작업했습니다.
+                                </p>
+                                <button class="timeline-toggle">
+                                    <span class="toggle-icon">▼</span>
+                                    <span class="toggle-text">상세보기</span>
+                                </button>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- 대외 활동 -->
+                <div class="experience-column">
+                    <h3 class="experience-category">대외 활동</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025.03 - 2025.10</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">가천대학교 시각디자인학과</h4>
+                                <p class="timeline-role">졸업 준비 위원회 - UI/UX 디자이너</p>
+                                <p class="timeline-text">
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                    40회 졸업 작품 전시 웹사이트 디자인을 담당했고, 웹 개발 팀 3명(본인 UIUX, 프론트엔드 1명, 백엔드 1명) 구성으로, 홈 - 전시 소개 - 작가 - 작품 - 방명록 구조로 설계했습니다. Figma로 유저플로우, 반응형 레이아웃, 그리드, 작품 상세를 디자인하고, After Effects로 홈 인터랙션 모션 예시를 제작했습니다. 
+                                    매주 팀 회의로 인터랙션 디테일, 브레이크포인트를 조율해 전시 2주 전 배포 완료, 방명록 270개로 전년도 대비 2.3배 증가 성과가 있었습니다. 
+                                </p>
+                                <button class="timeline-toggle">
+                                    <span class="toggle-icon">▼</span>
+                                    <span class="toggle-text">상세보기</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024.01 - 2025.02</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">플랫폼 개발 동아리 AIIA</h4>
+                                <p class="timeline-role">UI/UX 디자이너</p>
+                                <p class="timeline-text">
+                                    <span class="timeline-text-summary"></span>
+                                    <span class="timeline-text-detail" style="display: none;">
+                                    기획자와 개발자 분들과 4개 프로젝트를 협업했습니다.
+                                    <br>(1) 빈틈 : 그룹 약속 시간 매칭 서비스. 기획 및 UIUX 담당, 다인원 시간 조율 소요 시간 81% 감소 성과.
+                                    <br>(2) 메타가천 : 강의실 예약 서비스. 유저플로우, 타임블록 UI와 실시간 데이터 연동 인터랙션 정의
+                                    <br>(3) AIIA Air : 동아리 공식 웹.  외부, 내부 정보 우선순위를 고려한 IA와 카드형 반응형 그리드 구축. 
+                                    <br>(4) AIIA ai : 동아리 AI 챗봇. 대화형 UI, 오류 처리 UX 설계로 FAQ 자동화, 운영 효율 개선 성과.
+                                    </p>
+                                    <button class="timeline-toggle">
+                                        <span class="toggle-icon">▼</span>
+                                        <span class="toggle-text">상세보기</span>
+                                    </button>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023.07 - 2023.08</div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">강동아트센터 아트갤러리 전시회</h4>
+                                <p class="timeline-role">'움직이는 마을 : 강동 이야기' 자원봉사</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills 섹션 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Skills & Tools</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/figma.png" alt="Figma" class="skill-icon">
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/id.png" alt="Adobe Indesign" class="skill-icon">
+                                <span>Adobe Indesign</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/maya.png" alt="Autodesk Maya" class="skill-icon">
+                                <span>Autodesk Maya</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="60"></div></div>
+                        </li>
+                                                <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/notion.png" alt="Notion" class="skill-icon">
+                                <span>Notion</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </li>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/ps.png" alt="Adobe Photoshop" class="skill-icon">
+                                <span>Adobe Photoshop</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/ae.png" alt="Adobe After Effects" class="skill-icon">
+                                <span>Adobe After Effects</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/c4d.png" alt="Cinema 4D" class="skill-icon">
+                                <span>Cinema 4D</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="60"></div></div>
+                        </li>
+                                                <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/html.png" alt="HTML" class="skill-icon">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="50"></div></div>
+                        </li>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/ai.png" alt="Adobe illustration" class="skill-icon">
+                                <span>Adobe illustration</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/pr.png" alt="Adobe Premiere pro" class="skill-icon">
+                                <span>Adobe Premiere pro</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/slack.png" alt="Slack" class="skill-icon">
+                                <span>Slack</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="50"></div></div>
+                        </li>
+                                                <li class="skill-item">
+                            <div class="skill-header">
+                                <img src="images/css.png" alt="CSS" class="skill-icon">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="50"></div></div>
+                        </li>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header2">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">협업에 관심이 있으시다면 언제든지 연락주세요.</p>
+                <a href="mailto:bok0530g@gmail.com" class="contact-email">bok0530g@gmail.com</a>
+                <div class="contact-info">
+                    <p class="contact-detail">Tel: 010-2749-9566</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Go Bo Kyung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
