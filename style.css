@@ -276,8 +276,15 @@ section {
     gap: 2rem;
     /*margin-bottom: 2.5rem;*/
 }
-
 .section-header2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.section-header3 {
     display: flex;
     align-items: center;
     justify-content: center;
