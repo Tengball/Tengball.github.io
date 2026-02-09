@@ -1050,3 +1050,8 @@ section {
 .timeline-toggle.active .toggle-icon {
     transform: rotate(180deg);
 }
+.project-title-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
