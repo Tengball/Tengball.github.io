@@ -827,7 +827,8 @@ section {
 .timeline-item:hover .timeline-content {
     transform: translateX(5px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-color: var(--color-accent);
+    border-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+    /* border-color: var(--color-accent); */
 }
 
 .timeline-title {
