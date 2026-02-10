@@ -820,14 +820,15 @@ section {
     background: var(--color-bg-secondary);
     padding: 1.5rem;
     border-radius: 12px;
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--color-bg-secondary);
     transition: var(--transition);
 }
 
 .timeline-item:hover .timeline-content {
     transform: translateX(5px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-color: var(--color-accent);
+    border-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+    /* border-color: var(--color-accent); */
 }
 
 .timeline-title {
