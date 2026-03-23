@@ -880,7 +880,7 @@ section {
     }
 
     .about-content {
-        grid-template-columns:repeat(2, 1fr); /* 2열 → 1열 */
+        grid-template-columns:repeat(2, 1fr); 
         gap: 3rem;
     }
     .about-certificate{
@@ -912,6 +912,13 @@ section {
         .projects-list {
         gap: 0.8rem; /* 간격 조금 줄이기 (선택 사항) */
     }
+         .projects-list {
+        grid-template-columns: 1fr;    
+    }    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
