@@ -88,8 +88,8 @@ function animateCursor() {
     cursorX += (mouseX - cursorX) ;
     cursorY += (mouseY - cursorY) ;
     
-    followerX += (mouseX - followerX) * 0.8;
-    followerY += (mouseY - followerY) * 0.8;
+    followerX += (mouseX - followerX) * 0.15;
+    followerY += (mouseY - followerY) * 0.15;
     
     cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
     cursorFollower.style.transform = `translate3d(${followerX - 10}px, ${followerY - 10}px, 0)`;
@@ -153,8 +153,7 @@ statNumbers.forEach(stat => {
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
-                    const label = stat.nextElementSibling.textContent;
-                    stat.textContent = target + (label.includes('협업 프로젝트') || label.includes('실무 경험') || label.includes('대외 활동') ? '+' : '');
+                    stat.textContent = target;  // + 없이 숫자만
                     clearInterval(timer);
                 } else {
                     stat.textContent = Math.floor(current);
@@ -163,6 +162,8 @@ statNumbers.forEach(stat => {
         }
     });
 });
+
+
 // About 섹션 애니메이션 (새로 추가)
 gsap.from('.image-wrapper', {
     scrollTrigger: {
@@ -286,28 +287,25 @@ gsap.utils.toArray('.project-item').forEach((project, index) => {
         scrollTrigger: {
             trigger: project,
             start: 'top 80%',
-            end: 'bottom 60%',
+            end: 'bottom 100%',
             scrub: 1
         },
-       
         opacity: 0
     });
-    
-    // 짝수 프로젝트(02, 04)는 오른쪽에서 왼쪽으로
-    const xDirection = (index + 1) % 2 === 0 ? 50 : -50;
     
     gsap.from(info.children, {
         scrollTrigger: {
             trigger: project,
-            start: 'top 70%',
+            start: 'top 60%',
             toggleActions: 'play none none reverse'
         },
-        x: xDirection,
+        y: 50,   
         opacity: 0,
         duration: 1,
         stagger: 0.15
     });
 });
+
 
 
 // 스킬바 애니메이션
@@ -409,24 +407,6 @@ gsap.from('.social-link', {
     stagger: 0.2
 });
 
-// 프로젝트 호버 효과 강화 (기존 코드를 찾아서 이것으로 교체)
-document.querySelectorAll('.project-item').forEach(project => {
-    project.addEventListener('mouseenter', () => {
-        gsap.to(project.querySelector('.project-number'), {
-            fontSize: '6rem',
-            duration: 0.3,
-            ease: 'power2.out'
-        });
-    });
-    
-    project.addEventListener('mouseleave', () => {
-        gsap.to(project.querySelector('.project-number'), {
-            fontSize: '5rem',
-            duration: 0.3,
-            ease: 'power2.out'
-        });
-    });
-});
 
 // index.html에서만: 쿼리 파라미터를 보고 Projects 섹션으로 스크롤
 window.addEventListener('load', () => {
